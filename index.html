@@ -1,1 +1,378 @@
-Hello World
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="yandex-verification" content="a2b0dfa3a10b5338" />
+	<meta charset="utf-8" />
+	<title>Kevin Yang &mdash; Home</title>
+	<link rel="stylesheet" href="master.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+	<script>
+	    function unhide(divID) {
+	        var item = document.getElementById(divID);
+	        if (item) {
+	            item.className=(item.className=='hidden')?'unhidden':'hidden';
+	        }
+	}
+	</script>
+
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>	
+	
+	
+    <link rel="icon" href="http://nlp.cs.berkeley.edu/logo.png" />
+    <meta name="author" content="Kevin Yang">
+    <meta name="keywords" content="Kevin Yang UC Berkeley MIT story generation controllable controlled hierarchical planning large language model alignment RLHF natural processing artificial intelligence machine learning">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Homepage of Kevin Yang Berkeley">
+	
+</head>
+
+<body>
+<div class="wrapper">
+
+	<div class="posts-wrapper">
+		<div class="post">
+			<img src='me.png' style="float:right; width:250px;"/>
+
+			<h1>Kevin Yang</h1>
+
+			<h2>yangk at berkeley dot edu // <a href="https://scholar.google.com/citations?user=sRpY9TIAAAAJ&hl=en" target="_blank"> Scholar </a> // <a href="https://github.com/yangkevin2" target="_blank">GitHub</a> // 
+                <a href="Kevin Yang CV 082923.pdf" download>
+                    Curriculum Vitae
+                </a></h2>
+			<br>
+			<br>
+
+            <p>I am a 5th-year PhD student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~klein/" target="_blank">Dan Klein</a>, within <a href="http://nlp.cs.berkeley.edu/" target="_blank">Berkeley NLP</a> and <a href="https://bair.berkeley.edu" target="_blank">BAIR</a>.
+            <br> <br>
+
+            I am broadly interested in structured planning, control, and alignment/instruction-tuning methods for improving the quality and safety of natural language generation, especially for long context.
+    	    </p>
+	        <br>
+	    </div>
+	</div>
+
+    <!-- <a href="http://ericswallace.com/positive-movies.html"> <font color="white">Positive</font>
+ </a>
+    <a href="http://ericswallace.com/negative-movies.html"> <font color="white">Negative</font> </a> -->
+
+	<div class="posts-wrapper" style="clear:both">
+		<h3 style="margin-bottom:0.75em;">publications</h3>
+		</i>
+		<p>
+		<ul class="pubs">
+            <li>        
+                <a href="https://arxiv.org/abs/2307.12950" target="_blank">RLCD: Reinforcement Learning from Contrast Distillation for Language Model Alignment</a><br>
+                <u>Kevin Yang</u>, Dan Klein, Asli Celikyilmaz, Nanyun Peng, Yuandong Tian <br>
+                <i>arxiv 2023; to be submitted soon</i><br>
+                We propose a new method for simulating preference data in RLHF alignment pipelines based on generating preference pairs from two contrasting prompts, with strong downstream performance on three diverse alignment tasks and multiple LLaMA model scales.
+                <br> <a href="javascript:unhide('rlcd23');">Citation</a>
+                <div id="rlcd23" class="hidden">
+                    <pre>@article{yang2023rlcd,
+                        title={RLCD: Reinforcement Learning from Contrast Distillation for Language Model Alignment},
+                        author={Yang, Kevin and Klein, Dan and Celikyilmaz, Asli and Peng, Nanyun and Tian, Yuandong},
+                        journal={https://arxiv.org/abs/2307.12950},
+                        year={2023}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2212.10077" target="_blank">DOC: Improving Long Story Coherence With Detailed Outline Control</a><br>
+                <u>Kevin Yang</u>, Dan Klein, Nanyun Peng, Yuandong Tian <br>
+                <i>ACL 2023</i><br>
+                We improve coherence in several-thousand-word-long stories by constructing a more detailed outline and improving the generator's ability
+                to stay faithful to that outline. Humans prefer DOC to our previous Re3 system by a wide margin in both automatic and interactive generation.
+                <br> <a href="javascript:unhide('doc22');">Citation</a>
+                <div id="doc22" class="hidden">
+                    <pre>@article{yang2022doc,
+                        title={DOC: Improving Long Story Coherence With Detailed Outline Control},
+                        author={Yang, Kevin and Klein, Dan and Peng, Nanyun and Tian, Yuandong},
+                        journal={arXiv preprint arXiv:2212.10077},
+                        year={2022}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2306.05392" target="_blank">Modular Visual Question Answering via Code Generation</a><br>
+                Sanjay Subramanian, Medhini Narasimhan, Kushal Khangaonkar, <u>Kevin Yang</u> et al. <br>
+                <i>ACL 2023</i><br>
+                We improve performance on visual question answering tasks requiring multi-step reasoning by synthesizing programs to compose logical reasoning steps, including calling sub-tools.
+                <br> <a href="javascript:unhide('mod23');">Citation</a>
+                <div id="mod23" class="hidden">
+                    <pre>@article{subramanian2023modular,
+                        title={Modular Visual Question Answering via Code Generation},
+                        author={Subramanian, Sanjay and Narasimhan, Medhini and Khangaonkar, Kushal and Yang, Kevin and Nagrani, Arsha and Schmid, Cordelia and Zeng, Andy and Darrell, Trevor and Klein, Dan},
+                        journal={arXiv preprint arXiv:2306.05392},
+                        year={2023}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2307.03214" target="_blank">PREADD: Prefix-Adaptive Decoding for Controlled Text Generation</a><br>
+                Jonny Pei, <u>Kevin Yang</u>, Dan Klein<br>
+                <i>Findings of ACL 2023</i><br>
+                We propose a simple, no-training-required approach for modulating the control strength exerted through prompting, by contrasting the logit distributions induced by two contrasting prompts. We achieve strong results on toxic output mitigation, bias reduction, and sentiment control.
+                <br> <a href="javascript:unhide('preadd23');">Citation</a>
+                <div id="preadd23" class="hidden">
+                    <pre>@article{pei2023preadd,
+                        title={PREADD: Prefix-Adaptive Decoding for Controlled Text Generation},
+                        author={Pei, Jonathan and Yang, Kevin and Klein, Dan},
+                        journal={arXiv preprint arXiv:2307.03214},
+                        year={2023}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://www.nature.com/articles/s41467-023-37570-1" target="_blank">Predicting Compound Activity from Phenotypic Profiles and Chemical Structures</a><br>
+                Nikita Moshkov, Tim Becker, <u>Kevin Yang</u>, Peter Horvath et al.<br>
+                <i>Nature Communications 2023</i><br>
+                We investigate the effectiveness of three different data sources—-chemical structures, imaging data, and gene-expression profiles—-for predicting compound activity in laboratory assays.                
+                <br> <a href="javascript:unhide('predicting23');">Citation</a>
+                <div id="predicting23" class="hidden">
+                    <pre>@article{moshkov2023predicting,
+                        title={Predicting compound activity from phenotypic profiles and chemical structures},
+                        author={Moshkov, Nikita and Becker, Tim and Yang, Kevin and Horvath, Peter and Dancik, Vlado and Wagner, Bridget K and Clemons, Paul A and Singh, Shantanu and Carpenter, Anne E and Caicedo, Juan C},
+                        journal={Nature Communications},
+                        volume={14},
+                        number={1},
+                        pages={1967},
+                        year={2023},
+                        publisher={Nature Publishing Group UK London}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2210.06774" target="_blank">Re3: Generating Longer Stories With Recursive Reprompting and Revision</a><br>
+                <u>Kevin Yang</u>, Yuandong Tian, Nanyun Peng, Dan Klein <br>
+                <i>EMNLP 2022</i><br>
+                We automatically generate coherent stories, with a consistent overarching plot, by simulating the human writing process and repeatedly
+                reinjecting relevant context into large pretrained language models via structured prompting. The stories are 2000+ words, or even up to 7500. 
+                <br> <a href="javascript:unhide('re322');">Citation</a>
+                <div id="re322" class="hidden">
+                    <pre>@article{yang2022re3,
+                        title={Re3: Generating Longer Stories With Recursive Reprompting and Revision},
+                        author={Yang, Kevin and Tian, Yuandong and Peng, Nanyun and Klein, Dan},
+                        journal={Empirical Methods in Natural Language Processing},
+                        year={2022}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2205.09665" target="_blank">Automated Crossword Solving</a><br>
+                Eric Wallace*, Nicholas Tomlin*, Albert Xu*, <u>Kevin Yang*</u>, Eshaan Pathak*, Matthew Ginsberg, Dan Klein <br>
+                <i>ACL 2022</i><br>
+                We create a system for automatically solving crossword puzzles, and achieve superhuman performance for the first time. 
+                <br> <a href="javascript:unhide('crossword22');">Citation</a>
+                <div id="crossword22" class="hidden">
+                    <pre>@article{wallace2022automated,
+                        title={Automated Crossword Solving},
+                        author={Wallace, Eric and Tomlin, Nicholas and Xu, Albert and Yang, Kevin and Pathak, Eshaan and Ginsberg, Matthew and Klein, Dan},
+                        journal={ACL},
+                        year={2022}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2205.08675" target="_blank">Addressing Resource and Privacy Constraints in Semantic Parsing Through Data Augmentation</a><br>
+                <u>Kevin Yang</u>, Olivia Deng, Charles Chen, Richard Shin, Subhro Roy, Benjamin Van Durme <br>
+                <i>Findings of ACL 2022</i><br>
+                We propose a data augmentation scheme for low-resource semantic parsing in complex realistic environments, which simultaneously maintains user privacy.
+                <br> <a href="javascript:unhide('addressing22');">Citation</a>
+                <div id="addressing22" class="hidden">
+                    <pre>@article{yang2022addressing,
+                        title={Addressing Resource and Privacy Constraints in Semantic Parsing Through Data Augmentation},
+                        author={Yang, Kevin and Deng, Olivia and Chen, Charles and Shin, Richard and Roy, Subhro and Van Durme, Benjamin},
+                        journal={ACL},
+                        year={2022}
+                      }
+                    </pre>
+                </div>
+            </li> 
+            <li>        
+                <a href="https://arxiv.org/abs/2110.03173" target="_blank">Multi-Objective Optimization by Learning Space Partitions</a><br>
+                Yiyang Zhao, Linnan Wang, <u>Kevin Yang</u>, Tianjun Zhang, Tian Guo, Yuandong Tian <br>
+                <i>ICLR 2022</i><br>
+                We propose a space-partitioning search algorithm for finding the Pareto frontier in multi-objective optimization problems. 
+                <br> <a href="javascript:unhide('lamoo22');">Citation</a>
+                <div id="lamoo22" class="hidden">
+                    <pre>@article{zhao2021multi,
+                        title={Multi-objective Optimization by Learning Space Partitions},
+                        author={Zhao, Yiyang and Wang, Linnan and Yang, Kevin and Zhang, Tianjun and Guo, Tian and Tian, Yuandong},
+                        journal={International Conference on Learning Representations},
+                        year={2021}
+                      }
+                    </pre>
+                </div>
+            </li> 
+
+            <li>        
+                <a href="https://arxiv.org/abs/2106.10544" target="_blank">Learning Space Partitions for Path Planning</a><br>
+                <u>Kevin Yang*</u>, Tianjun Zhang*, Chris Cummins, Brandon Cui et al. <br>
+                <i>NeurIPS 2021</i><br>
+                We propose a path planning method inspired by a theoretical analysis of search space partitioning, and show strong performance on difficult multimodal, long-horizon path planning problems.
+                <br> <a href="javascript:unhide('lap321');">Citation</a>
+                <div id="lap321" class="hidden">
+                    <pre>@article{yang2021learning,
+                            title={Learning Space Partitions for Path Planning},
+                            author={Yang, Kevin and Zhang, Tianjun and Cummins, Chris and Cui, Brandon and Steiner, Benoit and Wang, Linnan and Gonzalez, Joseph E and Klein, Dan and Tian, Yuandong},
+                            journal={NeurIPS},
+                            year={2021}
+                        }
+                    </pre>
+                </div>
+            </li>  
+            
+            <li>        
+                <a href="https://aclanthology.org/2021.naacl-main.276.pdf" target="_blank">FUDGE: Controlled Text Generation with Future Discriminators</a><br>
+                <u>Kevin Yang</u> and Dan Klein <br>
+                <i>NAACL 2021</i><br>
+                We propose a simple, flexible and highly effective method for controlling generation toward desired attributes using lightweight classifiers. 
+                <br> <a href="javascript:unhide('fudge21');">Citation</a>
+                <div id="fudge21" class="hidden">
+                    <pre>@article{yang2021fudge,
+                            title={FUDGE: Controlled Text Generation With Future Discriminators},
+                            author={Yang, Kevin and Klein, Dan},
+                            journal={NAACL},
+                            year={2021}
+                          }
+                    </pre>
+                </div>
+            </li>  
+
+            <li>        
+                <a href="https://arxiv.org/abs/2010.02164" target="_blank">A Streaming Approach for Efficient Batched Beam Search</a><br>
+                <u>Kevin Yang</u>, Violet Yao, John DeNero, Dan Klein <br>
+                <i>EMNLP 2020</i><br>
+                We propose an efficient batching strategy for variable-length decoding on GPU architectures, demonstrating substantial speedups over existing fixed-width and variable-width beam searches. 
+                <br> <a href="javascript:unhide('streaming20');">Citation</a>
+                <div id="streaming20" class="hidden">
+                    <pre>@article{yang2020streaming,
+                        title={A streaming approach for efficient batched beam search},
+                        author={Yang, Kevin and Yao, Violet and DeNero, John and Klein, Dan},
+                        journal={Empirical Methods in Natural Language Processing},
+                        year={2020}
+                        }
+                    </pre>
+                </div>
+            </li>   
+
+            <li>        
+                <a href="https://arxiv.org/abs/2002.04720" target="_blank">Improving Molecular Design by Stochastic Iterative Target Augmentation</a><br>
+                <u>Kevin Yang</u>, Wengong Jin, Kyle Swanson, Regina Barzilay, and Tommi Jaakkola <br>
+                <i>ICML 2020</i><br>
+                We use a simple and theoretically motivated self-training approach guided by an external property predictor to significantly improve upon state-of-the-art approaches in molecular design. 
+                <br> <a href="javascript:unhide('improving20');">Citation</a>
+                <div id="improving20" class="hidden">
+                    <pre>@article{yang2020improving,
+                        title={Improving molecular design by stochastic iterative target augmentation},
+                        author={Yang, Kevin and Jin, Wengong and Swanson, Kyle and Barzilay, Regina and Jaakkola, Tommi},
+                        journal={International Conference on Machine Learning},
+                        year={2020}
+                      }
+                    </pre>
+                </div>
+            </li>   
+
+            <li>        
+                <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.0c00502" target="_blank">Uncertainty Quantification Using Neural Networks for Molecular Property Prediction</a><br>
+                Lior Hirschfeld, Kyle Swanson, <u>Kevin Yang</u>, Regina Barzilay, and Tommi Jaakkola <br>
+                <i>JCIM 2020</i><br>
+                We comprehensively evaluate and compare several approaches for uncertainty estimation in neural models on molecular property prediction tasks.
+                <br> <a href="javascript:unhide('uncertainty20');">Citation</a>
+                <div id="uncertainty20" class="hidden">
+                    <pre>@article{hirschfeld2020uncertainty,
+                        title={Uncertainty quantification using neural networks for molecular property prediction},
+                        author={Hirschfeld, Lior and Swanson, Kyle and Yang, Kevin and Barzilay, Regina and Coley, Connor W},
+                        journal={Journal of Chemical Information and Modeling},
+                        volume={60},
+                        number={8},
+                        pages={3770--3780},
+                        year={2020},
+                        publisher={ACS Publications}
+                      }
+                    </pre>
+                </div>
+            </li>  
+            
+            <li>        
+                <a href="https://static1.squarespace.com/static/5c264953620b850c9fb03732/t/5fcd85658a55f2188b8f91dc/1607304555123/cell_stokes.pdf" target="_blank">A Deep Learning Approach to Antibiotic Discovery</a><br>
+                Jonathan Stokes, <u>Kevin Yang</u>, Kyle Swanson, Wengong Jin et al. <br>
+                <i>Cell 2020</i><br>
+                We use computational property prediction models to screen drug databases for potential antibiotic activity, and discover new antibiotics with novel mechanisms of action which are effective even against bacteria which are resistant to commonly used antibiotics. 
+                <br> <a href="javascript:unhide('antibiotic20');">Citation</a>
+                <div id="antibiotic20" class="hidden">
+                    <pre>@article{stokes2020deep,
+                        title={A deep learning approach to antibiotic discovery},
+                        author={Stokes, Jonathan M and Yang, Kevin and Swanson, Kyle and Jin, Wengong and Cubillos-Ruiz, Andres and Donghia, Nina M and MacNair, Craig R and French, Shawn and Carfrae, Lindsey A and Bloom-Ackerman, Zohar and others},
+                        journal={Cell},
+                        volume={180},
+                        number={4},
+                        pages={688--702},
+                        year={2020},
+                        publisher={Elsevier}
+                      }
+                    </pre>
+                </div>
+            </li>    
+
+            <li>        
+                <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.9b00237" target="_blank">Analyzing Learned Molecular Representations for Property Prediction</a><br>
+                <u>Kevin Yang*</u>, Kyle Swanson*, Wengong Jin, Connor Coley et al. <br>
+                <i>JCIM 2019</i><br>
+                We carefully benchmark models for molecular property prediction on both public and proprietary industry datasets. In addition, we introduce a new variant of message-passing neural networks and demonstrate consistently strong performance that significantly improves over existing baselines on many datasets.
+                <br> <a href="javascript:unhide('analyzing19');">Citation</a>
+                <div id="analyzing19" class="hidden">
+                    <pre>@article{yang2019analyzing,
+                        title={Analyzing learned molecular representations for property prediction},
+                        author={Yang, Kevin and Swanson, Kyle and Jin, Wengong and Coley, Connor and Eiden, Philipp and Gao, Hua and Guzman-Perez, Angel and Hopper, Timothy and Kelley, Brian and Mathea, Miriam and others},
+                        journal={Journal of Chemical Information and Modeling},
+                        volume={59},
+                        number={8},
+                        pages={3370--3388},
+                        year={2019},
+                        publisher={ACS Publications}
+                      }
+                    </pre>
+                </div>
+            </li>        
+
+            <li>
+                <a href="https://arxiv.org/abs/1812.01070">Learning Multimodal Graph-to-Graph Translation for Molecular Optimization</a><br>
+                Wengong Jin, <u>Kevin Yang</u>, Regina Barzilay, and Tommi Jaakkola<br>
+                <i>ICLR 2019</i><br>
+                We introduce an encoder-decoder architecture for molecular optimization that operates directly on the molecular graph, and demonstrate that it significantly outperforms string-based baselines as well as pre-existing SOTA.
+                <br> <a href="javascript:unhide('learning19');">Citation</a>
+                <div id="learning19" class="hidden">
+                    <pre>@article{jin2018learning,
+                        title={Learning multimodal graph-to-graph translation for molecular optimization},
+                        author={Jin, Wengong and Yang, Kevin and Barzilay, Regina and Jaakkola, Tommi},
+                        journal={International Conference on Learning Representations},
+                        year={2018}
+                      }
+                 </pre>
+                </div>
+            </li>
+        </ul>	 
+        <br>
+		</p>
+
+		<p>Thanks <a href="https://people.cs.umass.edu/~miyyer/">Mohit</a> and <a href="http://www.ericswallace.com/">Eric</a> for the website template</p> 
+
+</div>
+</div>
+
+</body>
+</html>
